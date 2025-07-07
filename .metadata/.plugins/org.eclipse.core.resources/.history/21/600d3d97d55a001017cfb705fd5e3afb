@@ -1,0 +1,19 @@
+package controller;
+
+import model.Pessoa;
+
+public class Cadastro {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Pessoa p1 = new Pessoa();
+		
+		p1.nome = "mariai";
+		p1.idade = 21;
+		
+		p1.exibirInfo();
+
+	}
+
+}
