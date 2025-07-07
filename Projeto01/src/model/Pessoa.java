@@ -6,17 +6,18 @@ public class Pessoa {
 	private int idade;
 
 	public Pessoa(){
-
+		super();
 	};
 
 	public Pessoa(String nome, int idade) {
+		super();
 		this.nome = nome;
 		this.idade = idade;
 	}
 	
 	public void exibirInfo() {
-	System.out.println("nome :" + nome);
-	System.out.println("idade :" + idade);
+	System.out.println("Nome :" + nome);
+	System.out.println("Idade :" + idade);
 	}
 
 	public void setNome(String nome) {

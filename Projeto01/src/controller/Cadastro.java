@@ -1,5 +1,6 @@
 package controller;
 
+import model.Funcionario;
 import model.Pessoa;
 
 public class Cadastro {
@@ -8,13 +9,16 @@ public class Cadastro {
 		// TODO Auto-generated method stub
 		
 		Pessoa p1 = new Pessoa("Maria", 21);
-		Pessoa p2 = new Pessoa("Lucas",  45);
-
+		//Pessoa p2 = new Pessoa("Lucas",  45);
+		Funcionario f1 = new Funcionario("Eduardo", 32, 1567.90);
+		
 		p1.exibirInfo();
 
-		System.out.println("------------");
+		System.out.println("----------");
 
-		p2.exibirInfo();
+		f1.exibirInfo();
+
+
 	}
 
 }
