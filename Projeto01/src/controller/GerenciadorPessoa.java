@@ -21,7 +21,7 @@ public class GerenciadorPessoa {
         lista.remove(p);
     }
 
-    public void listarPesoas() {
+    public void listarPessoas() {
         for(Pessoa p : lista) {
             p.exibirInfo();
             System.out.println("--------");
