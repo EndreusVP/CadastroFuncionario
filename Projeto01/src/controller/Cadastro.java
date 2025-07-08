@@ -54,6 +54,7 @@ public class Cadastro {
 						int idadeFuncionario = entrada.nextInt();
 						System.out.println("Salario");
 						double salario = entrada.nextDouble();
+						entrada.nextLine();
 
 						grupo.adicionarPessoa(new Funcionario (nomeFuncionario, idadeFuncionario, salario));
 
