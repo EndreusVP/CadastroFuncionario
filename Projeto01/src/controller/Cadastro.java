@@ -10,7 +10,7 @@ public class Cadastro {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		ArrayList<Pessoa> lista = new ArrayList<>();
+		/*ArrayList<Pessoa> lista = new ArrayList<>();
 
 		Pessoa p1 = new Pessoa("Maria", 21);
 		Funcionario f1 = new Funcionario("Eduardo", 32, 1567.90);
@@ -23,7 +23,18 @@ public class Cadastro {
 		for (Pessoa p: lista) {
 			p.exibirInfo();
 			System.out.println("---------");
-		}
+		}*/
+
+		GerenciadorPessoa grupo = new GerenciadorPessoa();
+
+		Pessoa p1 = new Pessoa("Maria", 21);
+		Funcionario f1 = new Funcionario("Marcio", 23, 3800.00);
+
+		grupo.adicionarPessoa(p1);
+		grupo.adicionarPessoa(f1);
+
+		grupo.listarPesoas();
+
 	}
 
 }
