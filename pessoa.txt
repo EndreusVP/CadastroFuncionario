@@ -1,0 +1,4 @@
+P;endreus;21
+F;andre;20;2000.0
+P;Catarina;24
+F;lucas;23;1200.0

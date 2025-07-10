@@ -16,8 +16,10 @@ public class Pessoa {
 	}
 	
 	public void exibirInfo() {
-	System.out.println("Nome :" + nome);
-	System.out.println("Idade :" + idade);
+
+		System.out.println("Nome :" + nome);
+		System.out.println("Idade :" + idade);
+
 	}
 
 	public void setNome(String nome) {
@@ -32,7 +34,7 @@ public class Pessoa {
 		return nome;
 	}
 
-	public int getIdad(){
+	public int getIdade(){
 		return idade;
 	}
 

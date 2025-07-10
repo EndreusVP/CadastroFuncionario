@@ -25,12 +25,15 @@ public class Cadastro {
 
 		int selecao = 0;
 
-			while (selecao != 4) {
+			while (selecao != 6) {
 
 				System.out.println(1 +  " Adcionar Pessoa"); 
 				System.out.println(2 +  " Adicionar Funcionario"); 
 				System.out.println(3 +  " Listar Todos"); 
-				System.out.println(4 +  " Sair");
+				System.out.println(4 +  " Salvar Arquivo");
+				System.out.println(5 + " Carregar  Arquivo");
+				System.out.println(6 + " Sair");
+
 				
 				selecao = entrada.nextInt();
 				entrada.nextLine();
@@ -40,9 +43,9 @@ public class Cadastro {
 						System.out.println("Nome:");
 						String nomePessoa = entrada.nextLine();
 						System.out.println("Idade: ");
-						int indadePessoa = entrada.nextInt();
+						int idadePessoa = entrada.nextInt();
 
-						grupo.adicionarPessoa(new Pessoa(nomePessoa, indadePessoa));
+						grupo.adicionarPessoa(new Pessoa(nomePessoa, idadePessoa));
 
 						break;
 					
@@ -68,7 +71,19 @@ public class Cadastro {
 
 					case 4:
 
-						System.out.println("Saindo...");
+						grupo.salvarEmArquivo("pessoa.txt");
+
+						break;
+
+					case 5: 
+
+						grupo.carregarDoArquivo("pessoa.txt");
+
+						break;
+
+					case 6:
+
+						System.out.println("saindo...");
 
 						break;
 
